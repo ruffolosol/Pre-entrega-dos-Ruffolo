@@ -1,0 +1,100 @@
+/*Reseteo de CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(220, 223, 245);
+    text-align: center;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+}
+.imagen-uno{
+    grid-area: uno;
+}
+.imagen-dos{
+    grid-area: dos;
+}
+.imagen-tres{
+    grid-area: tres;
+}
+.img-footer{
+    background-image: url(../Img/medios-pago.png);
+    margin:10px 10px 10px 10px;
+    padding: 10px;
+    background-size: cover;
+}
+.whatsapp{
+    margin: 20px;
+    grid-area: whatsapp;
+}
+.email{
+    margin: 10px;
+    grid-area: email;
+}
+.instagram{
+    margin: 10px;
+    grid-area: instagram ;
+}
+.ubicacion{
+    margin: 10px;
+    grid-area: ubicacion;
+}
+.contenedora{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows:1fr 1fr ;
+grid-template-areas: 
+"whatsapp email"
+"instagram ubicacion ";
+justify-content:center;
+grid-column-gap: 50px;
+grid-row-gap: 10px;
+}
+.imagenes-tips{
+    margin: 20px;
+    padding: 20px;
+}
+.texto{
+    background-position: center;
+}
+.galeria{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.galeria__producto{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.galeria__producto img{
+    width: 13em;
+    height: 15em;
+}
+.grid__setter{
+    box-shadow: 2px 4px 7px 1px #00000024;
+    background-color: white;
+    border-radius: 1em;
+}
+.boton:hover{
+    background-color: rgb(162, 173, 252);
+    transform: scale(1.1);
+}
+@media(min-width: 300px) and (max-width: 576px){
+    body{
+        background-color:rgb(0, 0, 0);
+        color: white;
+    }
+    .img-footer{
+        display: none;
+    }
+}
+    
